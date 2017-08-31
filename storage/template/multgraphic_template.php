@@ -1,18 +1,15 @@
 <body>
 <div class="root">
-    <p style="font-size: 5px">char{{x}}</p>
     <div id="chardiv{{x}}" class="char"></div>
     <div id="table{{x}}">
         <table>
             <tr>
                 <th> data</th>
-                <th> raw</th>
                 <th> x</th>
                 <th> y</th>
             </tr>
             <tr v-for="x in datas">
                 <td>@{{ x.date }}</td>
-                <td>@{{ x.raw }}</td>
                 <td>@{{ x.x }}</td>
                 <td>@{{ x.y }}</td>
             </tr>
