@@ -17,16 +17,12 @@
     }
     .root
     {
-        page-break-before: always;
+        page-break-after: always;
         width: 520px;
-    }
-
-    .root:first-child {
-        page-break-before: auto;
     }
     .char
     {
-        height: 350px;
+        height: 400px;
         width: 625px;
         margin-left: -30px;
     }
@@ -39,10 +35,3 @@
 <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
 <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-
-<script>
-    $(document).ready(function() {
-        $("div.root:last").css("page-break-after", "auto");
-        });
-
-</script>
