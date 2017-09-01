@@ -4,27 +4,45 @@
         font-size: 8px;
         width: 100%;
         border-collapse: collapse;
-        border: 1px solid black;
+        border: 2px solid #eee;
         text-align: center;
-        height: 300px;
+
 
     }
-    td
-    {
-        width: 25%;
-        border: 1px solid black;
-
+    .root table th, .root table td {
+        text-align: center;
     }
+
+    .root table th {
+        background: #999;
+        color: #fff;
+    }
+
+    .root table td {
+        border-bottom: 1px solid #eee;
+    }
+
+    .root table td.row-title {
+        font-weight: bold;
+    }
+
+
     .root
     {
-        page-break-after: always;
+        page-break-before: always;
         width: 520px;
+
+    }
+
+    .root:first-child {
+        page-break-before: auto;
     }
     .char
     {
-        height: 400px;
+        height: 350px;
         width: 625px;
         margin-left: -30px;
+
     }
 </style>
 
