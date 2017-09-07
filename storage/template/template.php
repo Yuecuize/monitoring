@@ -1,4 +1,8 @@
 <style>
+    html
+    {
+        height: 0px;
+    }
     table
     {
         font-size: 8px;
